@@ -12,8 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('login');
-});
+    return view('front.index');
+})->name('front');
 
 /* ---- Ruuta para llamar al dashboard , modificarla si es necesario ----- */
 Route::get('dashboard', 'LoginController@index');
