@@ -14,7 +14,7 @@
 		<link rel="shortcut icon" type="image/x-icon" sizes="32x32"  href="{{ asset('img/favicon-32x32.ico') }}">
 		<link rel="manifest" href="{{ asset('manifest.json') }}">
 		<meta name="msapplication-TileColor" content="#ffffff">
-		<meta name="msapplication-TileImage" content="{{ asset('img/ms-icon-140x140.png') }}">
+		<meta name="msapplication-TileImage" content="{{ asset('img/ms-icon-144x144.png') }}">
 		<meta name="theme-color" content="#ffffff">
 
 		<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Raleway" rel="stylesheet">
@@ -23,6 +23,7 @@
     ============================================ -->
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/font-awesome.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/animated.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <!-- Owl carousel
     ============================================ -->
@@ -55,7 +56,7 @@
 		            <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 		          </button>
 		          <a class="navbar-brand" href="{{route('front')}}">
-		            <span class="pull-left"><img src="{{ asset('public/img/logo_completo.png') }}" height="70" alt="logo"></span>
+		            <span class="pull-left"><img src="{{ asset('img/logo_completo.png') }}" height="70" alt="logo"></span>
 		          </a>
 		        </div>
 		      </div>
@@ -106,12 +107,12 @@
             <ul class="list-unstyled footer-quote-list">
             </ul>
           </div>
-          <div class="col-xs-12 col-md-2 pull-right">
+          <div class="col-xs-12 col-md-3 pull-right">
             <div class="redes">
               <h4>Follow us</h4>
-              <a href="#"><i class="fa fa-twitter fa-fw"></i></a>
-              <a href="#"><i class="fa fa-facebook fa-fw"></i></a>
-              <a href="#"><i class="fa fa-instagram fa-fw"></i></a>
+              <a href="http://facebook.com/Clinispa"><i class="fa fa-facebook fa-fw">&nbsp;CliniSpa</i></a><br>
+              <a href="http://instagram.com/clinispa"><i class="fa fa-instagram fa-fw">&nbsp;@CliniSpa</i></a><br>
+              <a href="http://twitter.com/clinispamx"><i class="fa fa-twitter fa-fw">&nbsp;@CliniSpamx</i></a>
             </div>
            </div>
            <div class="col-xs-12 col-md-2 pull-right">

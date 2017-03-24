@@ -3,7 +3,7 @@
 @section('title',config('app.name'))
 
 @section('content')
-	<section class="section-even" style="padding:0">
+	<section class="section-odd" style="padding:0">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-12" style="padding:0">
@@ -39,11 +39,16 @@
 					</div>
 				</div>
 			</div><!--Row-->
-			<div class="row">
-				<div class="col-md-12">
-    		</div>
-    	</div>
     </div>
+  </section>
+
+  <section class="section-even" style="background-color: #AE206C !important;">
+  	<div class="container">
+  		<div class="col-md-12 intro-message animated">
+  			<h1>Rescata tu piel de los errores del pasado</h1>
+  			<h3>¡Dejate consentir por nosotros!</h3>
+  		</div>
+  	</div>
   </section>
 
   <section class="section-odd">
@@ -156,9 +161,7 @@
               <li><i class="fa fa-phone fa-fw"></i>&nbsp;123 456 7890<br></li>
               <li>
                 <i class="fa fa-map-marker fa-fw"></i>
-                  103 Reddish Lane<br>
-                  Manchester<br>
-                  Denton – M34 2NF
+                  Mexico<br>
               </li>
             </ul>
           </div>
@@ -191,6 +194,25 @@
 @section('scripts')
   <script type="text/javascript">
     $(window).ready(function(){
+    	var $root = $('body');
+
+      $(window).scroll(function(){
+        var wH = $root.height(),
+            wS = $(this).scrollTop();
+
+        $('.intro-message').addClass('fadeInUp');
+        console.log("1");
+      });
+
+      $('.link-scroll').click(function() {
+        console.log(this.href);
+          $root.animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top
+          }, 500);
+        return false;
+      });
+
+
 		  $(".owl-carousel").owlCarousel({
 		  	dots:true,
 		    items:5,
@@ -200,7 +222,7 @@
 		    autoplayTimeout:1000,
 		    autoplayHoverPause:true
 		  });
-      $('div.alert').not('.alert-important').delay(5000).slideUp(300);
-    });
+
+    });//Ready
   </script>
 @endsection
