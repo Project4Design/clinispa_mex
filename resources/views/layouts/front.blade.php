@@ -127,7 +127,7 @@
         </div>
         <div class="row design">
         	<div class="col-md-4 col-md-offset-4 text-center">
-        		Developed by: <a href="http://wwww.project4design.com.ve">Project 4 Design</a>
+        		Developed by<br><a href="http://www.project4design.com.ve">Project 4 Design</a>
         	</div>
         </div>
       </div>
